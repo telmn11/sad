@@ -1,0 +1,25 @@
+p { color: green;
+  }
+ 
+header h1 { 
+    color: brown;
+}
+main p { 
+    color: chocolate;
+}
+#maintitle {
+    color: blue;
+}
+.orange {
+    color: orange;
+}
+
+.honored { font-size: 15pt;
+     font-weight: bold;
+}
+.purple{ 
+    font-size: large; color: black;
+}
+.power {
+      background-color: grey;
+}
