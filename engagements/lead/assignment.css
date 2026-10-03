@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: navy;
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: green;
+}
+
+nav {
+    background-color: black;
+}
+
+nav a {
+    color: white;
+}
+
+.something {
+    color: red;
+}
+
+.son {
+    color: gray;
+}
+
+#what {
+    color: green;
+}
+
+span {
+    color: purple;
+}
+
+footer {
+    color: gray;
+}
