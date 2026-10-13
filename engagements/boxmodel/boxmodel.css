@@ -1,0 +1,69 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+
+* {
+    outline: thin solid red;
+}
+
+h1 {
+    text-align: center;
+}
+
+.p1 {
+    width: 250px;
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 20px;
+
+    border: 2px solid steelblue;
+}
+
+.p2 {
+    padding: 20px;
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 4px solid red;
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+.p3 {
+    padding: 15px;
+    border: 2px dotted green;
+
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+
+figure {
+    width: 80%;
+    padding: 1em;
+    margin: 2rem auto;
+    border: 1px solid gray;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+}
+
+main {
+    width: 90%;
+}
