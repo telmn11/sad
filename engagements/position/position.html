@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Telmen's Web Design</h1>
+    </header>
+
+    <main>
+        <h2>Positioning</h2>
+
+        <figure id="floating" class="templefig">
+            <img src="templehawaii.jpg" alt="Waterfall in Hawaii">
+            <figcaption>Waterfall in Hawaii</figcaption>
+        </figure>
+
+        <p>
+            CSS helps us arrange pictures and text on a web page.
+            We can use different positioning properties.
+        </p>
+
+        <p>
+            Normal flow is the default layout of HTML elements.
+            Block elements stack from top to bottom.
+        </p>
+
+        <p>
+            Float moves a figure to the left or right.
+            Text can wrap around the figure.
+        </p>
+
+        <h2 class="enforcer">Float and Clear</h2>
+
+        <p>
+            The clear property makes a heading start below a floated figure.
+            This prevents the heading from appearing beside the figure.
+        </p>
+
+        <h2>Relative Position</h2>
+
+        <p>
+            Relative positioning moves an element from its original position.
+            The original space remains on the page.
+        </p>
+
+        <figure id="relative" class="templefig relative">
+            <img src="templehawaii.jpg" alt="Waterfall in Hawaii">
+            <figcaption>Relative position</figcaption>
+        </figure>
+
+        <h2>Absolute Position</h2>
+
+        <p>
+            Absolute positioning removes an element from normal flow.
+            We can move it using top, bottom, left, and right.
+        </p>
+
+        <figure id="absolute" class="templefig absolute">
+            <img src="templehawaii.jpg" alt="Waterfall in Hawaii">
+            <figcaption>Absolute position</figcaption>
+        </figure>
+
+        <h2>Fixed Position</h2>
+
+        <p>
+            Fixed positioning keeps an element in the same place
+            on the screen when we scroll.
+        </p>
+
+        <figure id="fixed" class="templefig fixed">
+            <img src="templehawaii.jpg" alt="Waterfall in Hawaii">
+            <figcaption>Fixed position</figcaption>
+        </figure>
+
+        <h2>Questions</h2>
+
+        <p>
+            <strong>1. What is normal flow in HTML?</strong><br>
+            Normal flow is the default layout of HTML elements.
+            Block elements stack from top to bottom.
+        </p>
+
+        <p>
+            <strong>2. What does float do? Why do you need to clear the float?</strong><br>
+            Float moves an element to the left or right, allowing text
+            to wrap around it. Clear makes the next element start below
+            the floated element.
+        </p>
+
+        <p>
+            <strong>3. What do absolute, fixed, and relative do?</strong><br>
+            Relative moves an element from its original position.
+            Absolute positions an element outside normal flow.
+            Fixed keeps an element in the same place on the screen
+            when scrolling.
+        </p>
+
+        <p>
+            <strong>4. How can you make nice navigation buttons for mobile devices?</strong><br>
+            We can use display: block, width: 100%, and padding
+            to make large buttons that are easy to tap.
+        </p>
+
+        <p>
+            <strong>5. Where can you find videos to review what we talked about in class?</strong><br>
+            I can find review videos in Canvas or on the class website.
+        </p>
+
+    </main>
+
+    <footer>
+        &copy; Telmen
+    </footer>
+
+</body>
+</html>
