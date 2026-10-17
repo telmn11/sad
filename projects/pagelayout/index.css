@@ -1,0 +1,105 @@
+
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#wrapper {
+    width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+header {
+    height: 150px;
+    padding: 20px;
+    background-image: url("comp.jpg");
+    background-size: cover;
+    background-origin: border-box;
+    background-clip: padding-box;
+    text-align: center;
+    border: 2px solid black;
+}
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px gray;
+}
+
+nav {
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: orange;
+    color: black;
+}
+
+main {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    text-align: center;
+}
+
+.myguy {
+    float: left;
+    width: 280px;
+    margin: 5px 20px 10px 0;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px gray;
+    text-align: center;
+}
+
+.myguy img {
+    width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+}
+
+main p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-style: italic;
+}
