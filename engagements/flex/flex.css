@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* My own flex parent */
+.my-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.my-card {
+    border: 2px solid black;
+    padding: 15px;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+}
