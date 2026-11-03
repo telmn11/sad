@@ -4,7 +4,6 @@ body {
     margin: 8px;
 }
 
-/* Header */
 
 header {
     background-color: #ffedb5;
@@ -18,7 +17,6 @@ header h1 {
     font-size: 36px;
 }
 
-/* Navigation */
 
 nav {
     display: flex;
@@ -69,8 +67,6 @@ main {
     min-width: 0;
 }
 
-/* Article Cards */
-
 main h2 {
     text-align: center;
 }
@@ -110,14 +106,10 @@ main h2 {
     line-height: 1.5;
 }
 
-/* Footer */
-
 footer {
     margin-top: 20px;
     padding: 10px;
 }
-
-/* Print */
 
 @media print {
 
@@ -138,8 +130,6 @@ footer {
     }
 
 }
-
-/* Mobile CSS */
 
 @media screen and (max-width: 700px) {
 
