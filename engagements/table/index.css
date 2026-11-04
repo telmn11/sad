@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tablediv {
+    overflow-x: auto;
+}
+
+#schedule {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#schedule th,
+#schedule td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#schedule thead th {
+    background-color: hsl(271, 70%, 74%);
+    color: white;
+}
+
+#schedule tbody th {
+    background-color: hsl(271, 70%, 74%);
+    color: white;
+}
+
+#schedule tbody tr:nth-child(even) td {
+    background-color: rgb(180, 249, 226);
+}
+
+#schedule td:nth-child(6) {
+    text-align: right;
+}
+
+#schedule td {
+    vertical-align: middle;
+}
+
+#schedule tbody tr:hover td {
+    background-color: yellow;
+}
+
+caption {
+    caption-side: top;
+    padding: 10px;
+}
+
+#schedule tfoot th,
+#schedule tfoot td {
+    background-color: lightgrey;
+    font-weight: bold;
+}

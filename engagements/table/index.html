@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,115 +14,110 @@
     <h1>My Schedule</h1>
 </header>
 
-<main>
+<div class="tablediv">
+    <main>
 
-    <table border="1">
+        <table id="schedule">
 
-        <caption> <b> My Class Schedule </b></caption>
+            <caption><b>My Class Schedule</b></caption>
 
-        <thead>
-            <tr>
-                <th scope="col">Department</th>
-                <th scope="col">Course Number</th>
-                <th scope="col">Title</th>
-                <th scope="col">Location</th>
-                <th scope="col">Time</th>
-                <th scope="col">Credits</th>
-            </tr>
-        </thead>
+            <thead>
+                <tr>
+                    <th scope="col">Department</th>
+                    <th scope="col">Course Number</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Credits</th>
+                </tr>
+            </thead>
 
-        <tbody>
-            <tr>
-                <th colspan="6" scope="colgroup">FALL 2026</th>
-            </tr>
+            <tbody>
+                <tr class="semester">
+                    <th colspan="6">FALL 2026</th>
+                </tr>
 
-            <tr>
-                <td rowspan="3">CS</td>
-                <td>140</td>
-                <td>Web Design</td>
-                <td>P2</td>
-                <td>10:30</td>
-                <td>3</td>
-            </tr>
+                <tr>
+                    <td rowspan="3">CS</td>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>P2</td>
+                    <td>10:30</td>
+                    <td>3</td>
+                </tr>
 
-            <tr>
-                <td>110</td>
-                <td>Computer</td>
-                <td>P1</td>
-                <td>11:00</td>
-                <td>5</td>
-            </tr>
+                <tr>
+                    <td>110</td>
+                    <td>Computer</td>
+                    <td>P1</td>
+                    <td>11:00</td>
+                    <td>5</td>
+                </tr>
 
-            <tr>
-                <td>120</td>
-                <td>IT</td>
-                <td>P10</td>
-                <td>14:00</td>
-                <td>4</td>
-            </tr>
-        </tbody>
+                <tr>
+                    <td>120</td>
+                    <td>IT</td>
+                    <td>P10</td>
+                    <td>14:00</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
 
-        <tbody>
-            <tr>
-                <th colspan="6" scope="colgroup">WINTER 2027</th>
-            </tr>
+            <tbody>
+                <tr class="semester">
+                    <th colspan="6">WINTER 2027</th>
+                </tr>
 
-            <tr>
-                <td rowspan="3">CS</td>
-                <td>240</td>
-                <td>Web Design 2</td>
-                <td>P3</td>
-                <td>10:00</td>
-                <td>6</td>
-            </tr>
+                <tr>
+                    <td rowspan="3">CS</td>
+                    <td>240</td>
+                    <td>Web Design 2</td>
+                    <td>P3</td>
+                    <td>10:00</td>
+                    <td>6</td>
+                </tr>
 
-            <tr>
-                <td>450</td>
-                <td>IT 2</td>
-                <td>P2</td>
-                <td>11:00</td>
-                <td>4</td>
-            </tr>
+                <tr>
+                    <td>450</td>
+                    <td>IT 2</td>
+                    <td>P2</td>
+                    <td>11:00</td>
+                    <td>4</td>
+                </tr>
 
-            <tr>
-                <td>210</td>
-                <td>Computer 2</td>
-                <td>P1</td>
-                <td>12:00</td>
-                <td>5</td>
-            </tr>
-        </tbody>
+                <tr>
+                    <td>210</td>
+                    <td>Computer 2</td>
+                    <td>P1</td>
+                    <td>12:00</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
 
-        <tfoot>
-            <tr>
-                <th colspan="5" scope="row">Total Credits</th>
-                <td>27</td>
-            </tr>
-        </tfoot>
+            <tfoot>
+                <tr>
+                    <th colspan="5">Total Credits</th>
+                    <td>27</td>
+                </tr>
+            </tfoot>
 
-    </table>
+        </table>
 
-    <section>
-        <h2>Questions</h2>
+        <section>
+            <h2>Questions</h2>
+            <p><strong>1. Why don't we use the border attribute?</strong></p>
+            <p>We don't use the border attribute because CSS is better for styling tables.</p>
 
-        <p><strong>1. When do you use a table?</strong></p>
-        <p>I use table to organize information into rows and columns.</p>
+            <p><strong>2. What is the easiest way to color every other row a different color?</strong></p>
+            <p>The easiest way is to use the nth-child() pseudo-class in CSS.</p>
 
-        <p><strong>2. When do you not use a table?</strong></p>
-        <p>I dont use a table to design a webpage. I use CSS for that.</p>
+            <p><strong>3. What does the value in the parentheses of your structural pseudo-class mean? Give one other value you could use and which rows it would select.</strong></p>
+            <p>The value tells CSS which rows to select. For example odd selects the first, third and fifth rows.</p>
 
-        <p><strong>3. When do you need to do extra work for table accessibility?</strong></p>
-        <p>I need extra work when my table has merged cells or complex headers. This helps screen readers understand the table.</p>
+        </section>
 
-        <p><strong>4. Which question you asked AI today helped you learn the most, and why?</strong></p>
-        <p>The question about colspan helped me the most because I learned how to make one cell cover multiple columns.</p>
-
-        <p><strong>5. Did AI ever try to give you more than you asked for? What did you do?</strong></p>
-        <p>Sometimes AI gave me too much code. I asked it to explain the code instead of doing my work.</p>
-
-    </section>
-
-</main>
+    </main>
+</div>
 
 <footer>
     <p>&copy; Telmen Munkhchuluun.</p>
