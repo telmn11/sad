@@ -1,0 +1,74 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav {
+    background-color: black;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    padding: 15px;
+}
+
+main {
+    flex: 3;
+    padding: 15px;
+}
+
+aside {
+    flex: 1;
+    background-color: lightgray;
+    padding: 15px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+}
+
+th {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
