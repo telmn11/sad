@@ -1,0 +1,136 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telmen's Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TELMEN'S FORM GUYS</h1>
+    </header>
+
+    <main>
+
+        <form action="formprocessing.html" method="post">
+
+            <div class="form-row">
+                <label for="personname">Fullname:</label>
+                <input id="personname" type="text" name="fullname"
+                    placeholder="fullname">
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email"
+                    placeholder="email">
+            </div>
+
+            <div class="form-row">
+                <label for="pass">ID:</label>
+                <input id="pass" type="password" name="pass"
+                    placeholder="ID number">
+            </div>
+
+            <div class="form-row">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Choose one</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <p>Do you believe in god?</p>
+
+                <input type="radio" name="role" >
+                <label for="yes">yes</label>
+
+                <input type="radio" name="role">
+                <label for="no">no</label>
+            </div>
+
+            <div class="form-row">
+                <p>What are your hobbies?</p>
+
+                <input type="checkbox" id="music" name="hobbies" value="music">
+                <label for="music">Music</label>
+
+                <input type="checkbox" id="sports" name="hobbies" value="sports">
+                <label for="sports">Sports</label>
+
+                <input type="checkbox" id="games" name="hobbies" value="games">
+                <label for="games">Games</label>
+            </div>
+
+            <div class="form-row">
+                <label for="about">About yourself:</label>
+                <textarea id="about" name="about"
+                    placeholder="Tell us about yourself"></textarea>
+            </div>
+
+            <div class="form-row">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </div>
+
+            <div class="form-row">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                    placeholder="Enter your age">
+            </div>
+
+            <div class="form-row">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+
+        <section>
+            <h2>Questions</h2>
+
+            <h3>1. What does the action attribute do?</h3>
+            <p>The action attribute tells the browser where to send the form information.</p>
+
+            <h3>2. What does the method attribute do?</h3>
+            <p>The method attribute tells the browser how to send the form information.</p>
+
+            <h3>3. What is the difference between POST and GET?</h3>
+            <p>GET sends information in the URL. POST sends information in the request body.</p>
+
+            <h3>4. How do you fill in a form control with a pre-set value, and how is that different from a placeholder?</h3>
+            <p>
+                Text box: Use the value attribute.<br>
+                Textarea: Put text between the textarea tags.<br>
+                Select box: Use the selected attribute.<br>
+                Checkbox: Use the checked attribute.<br>
+                Radio button: Use the checked attribute.
+            </p>
+            <p>A value is already entered in the form. A placeholder is just a hint that disappears when you type.</p>
+
+            <h3>5. List all the form controls that HTML5 added. Which ones did you put in your form?</h3>
+            <p>
+                HTML5 added these input types:
+                color, date, datetime-local, email, month, number,
+                range, search, tel, time, url, and week.
+            </p>
+            <p>I added email, date, and number to my form.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Telmen Munkhchuluun 2026</p>
+    </footer>
+
+</body>
+</html>
+```
