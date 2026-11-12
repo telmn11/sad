@@ -1,7 +1,5 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,73 +17,87 @@
 
         <form action="formprocessing.html" method="post">
 
-            <div class="form-row">
-                <label for="personname">Fullname:</label>
-                <input id="personname" type="text" name="fullname"
-                    placeholder="fullname">
-            </div>
+            <fieldset>
+                <legend>Account</legend>
 
-            <div class="form-row">
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="email"
-                    placeholder="email">
-            </div>
+                <div class="form-row">
+                    <label for="personname">Fullname:</label>
+                    <input id="personname" type="text" name="fullname"
+                        placeholder="fullname">
+                </div>
 
-            <div class="form-row">
-                <label for="pass">ID:</label>
-                <input id="pass" type="password" name="pass"
-                    placeholder="ID number">
-            </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email"
+                        placeholder="email">
+                </div>
 
-            <div class="form-row">
-                <label for="gender">Gender:</label>
-                <select id="gender" name="gender">
-                    <option value="">Choose one</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input id="pass" type="password" name="pass"
+                        placeholder="Password">
+                </div>
 
-            <div class="form-row">
-                <p>Do you believe in god?</p>
+            </fieldset>
 
-                <input type="radio" name="role" >
-                <label for="yes">yes</label>
+            <fieldset>
+                <legend>About You</legend>
 
-                <input type="radio" name="role">
-                <label for="no">no</label>
-            </div>
+                <div class="form-row">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="">Choose one</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
 
-            <div class="form-row">
-                <p>What are your hobbies?</p>
+                <fieldset>
+                    <legend>Do you believe in god?</legend>
 
-                <input type="checkbox" id="music" name="hobbies" value="music">
-                <label for="music">Music</label>
+                    <div class="choice-row">
+                        <input type="radio" id="yes" name="role" value="yes">
+                        <label for="yes">Yes</label>
 
-                <input type="checkbox" id="sports" name="hobbies" value="sports">
-                <label for="sports">Sports</label>
+                        <input type="radio" id="no" name="role" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
 
-                <input type="checkbox" id="games" name="hobbies" value="games">
-                <label for="games">Games</label>
-            </div>
+                <div class="form-row">
+                    <label>What are your hobbies?</label>
+                </div>
 
-            <div class="form-row">
-                <label for="about">About yourself:</label>
-                <textarea id="about" name="about"
-                    placeholder="Tell us about yourself"></textarea>
-            </div>
+                <div class="choice-row">
+                    <input type="checkbox" id="music" name="hobbies" value="music">
+                    <label for="music">Music</label>
 
-            <div class="form-row">
-                <label for="birthday">Birthday:</label>
-                <input type="date" id="birthday" name="birthday">
-            </div>
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <label for="sports">Sports</label>
 
-            <div class="form-row">
-                <label for="age">Age:</label>
-                <input type="number" id="age" name="age"
-                    placeholder="Enter your age">
-            </div>
+                    <input type="checkbox" id="games" name="hobbies" value="games">
+                    <label for="games">Games</label>
+                </div>
+
+                <div class="form-row">
+                    <label for="about">About yourself:</label>
+                    <textarea id="about" name="about"
+                        placeholder="Tell us about yourself"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age"
+                        placeholder="Enter your age">
+                </div>
+
+            </fieldset>
 
             <div class="form-row">
                 <input type="submit" value="Submit">
@@ -96,32 +108,14 @@
         <section>
             <h2>Questions</h2>
 
-            <h3>1. What does the action attribute do?</h3>
-            <p>The action attribute tells the browser where to send the form information.</p>
+            <p><strong>1. What are different ways to style your form?</strong></p>
+            <p>We can use CSS to change colors, borders, padding, margins, fonts and backgrounds. We can also use flex and media queries.</p>
 
-            <h3>2. What does the method attribute do?</h3>
-            <p>The method attribute tells the browser how to send the form information.</p>
+            <p><strong>2. Why does the professor like to use flex?</strong></p>
+            <p>Flex makes it easier to organize labels and fields in rows. It also helps keep everything aligned and organized.</p>
 
-            <h3>3. What is the difference between POST and GET?</h3>
-            <p>GET sends information in the URL. POST sends information in the request body.</p>
-
-            <h3>4. How do you fill in a form control with a pre-set value, and how is that different from a placeholder?</h3>
-            <p>
-                Text box: Use the value attribute.<br>
-                Textarea: Put text between the textarea tags.<br>
-                Select box: Use the selected attribute.<br>
-                Checkbox: Use the checked attribute.<br>
-                Radio button: Use the checked attribute.
-            </p>
-            <p>A value is already entered in the form. A placeholder is just a hint that disappears when you type.</p>
-
-            <h3>5. List all the form controls that HTML5 added. Which ones did you put in your form?</h3>
-            <p>
-                HTML5 added these input types:
-                color, date, datetime-local, email, month, number,
-                range, search, tel, time, url, and week.
-            </p>
-            <p>I added email, date, and number to my form.</p>
+            <p><strong>3. What makes for a good mobile form?</strong></p>
+            <p>A good mobile form is easy to read and use. Fields should be big enough to tap and the layout should fit a small screen.</p>
 
         </section>
 
@@ -133,4 +127,3 @@
 
 </body>
 </html>
-```

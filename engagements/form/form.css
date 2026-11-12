@@ -1,3 +1,71 @@
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.form-row {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-row label {
+    width: 150px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    padding: 8px;
+}
+
+.choice-row {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid blue;
+    background-color: lightyellow;
+    outline: 2px solid lightblue;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row label {
+        width: auto;
+    }
+
+    .choice-row {
+        flex-wrap: wrap;
+    }
+
+    fieldset {
+        padding: 12px;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
 }
