@@ -1,0 +1,143 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #f2b00a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #f2b00a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+fieldset {
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+legend {
+    font-weight: bold;
+    color: #263b50;
+    padding: 5px 10px;
+}
+
+.designing {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.designing label {
+    width: 180px;
+}
+
+.designing input,
+.designing textarea,
+.designing select {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.designing input,
+.designing textarea,
+.designing select {
+    flex: 1;
+}
+
+.designing textarea {
+    min-height: 70px;
+}
+
+.design {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.design select {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.choice-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.choice-row label {
+    margin-right: 15px;
+}
+
+.submit-row {
+    justify-content: center;
+}
+
+.submit-row input {
+    background-color: #263b50;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 500px) {
+
+    main {
+        width: 100%;
+    }
+
+    .designing,
+    .design {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 5px;
+    }
+
+    .designing label {
+        width: auto;
+    }
+
+    .designing input,
+    .designing textarea,
+    .designing select,
+    .design select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .choice-row {
+        flex-wrap: wrap;
+    }
+
+    .submit-row input {
+        width: 100%;
+        padding: 16px;
+        font-size: 18px;
+    }
+}

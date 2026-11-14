@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telmen's Form Project</title>
+    <link rel="stylesheet" href="formproject.css">
+</head>
+<body>
+    <header>
+        <h1>Telmen's Form Project Guys</h1>
+    </header>
+
+    <main>
+        <form action="formproject.html" method="post">
+            <fieldset>
+                <legend>About You Bro</legend>
+
+                <div class="designing">
+                    <label for="name">Fullname:</label>
+                    <input id="name" type="text" name="fullname"
+                           placeholder="Your fullname">
+                </div>
+
+                <div class="designing">
+                    <label for="Email">Email:</label>
+                    <input id="Email" type="email" name="Email"
+                           placeholder="Your email">
+                </div>
+
+                <div class="designing">
+                    <label for="Password">Password:</label>
+                    <input type="password" name="password"
+                           id="Password" placeholder="Your password">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Check It If You Want</legend>
+
+                <div class="design">
+                    <label for="gender">What is your gender:</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="private">Don't want to tell</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Do You Believe in Yourself?</legend>
+
+                    <div class="choice-row">
+                        <input type="radio" id="yes" name="role" value="Yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" id="no" name="role" value="No">
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What Are Your Hobbies?</legend>
+
+                    <div class="choice-row">
+                        <input type="checkbox" id="music"
+                               name="hobbies" value="music">
+                        <label for="music">Music</label>
+
+                        <input type="checkbox" id="basketball"
+                               name="hobbies" value="basketball">
+                        <label for="basketball">Basketball</label>
+
+                        <input type="checkbox" id="soccer"
+                               name="hobbies" value="soccer">
+                        <label for="soccer">Soccer</label>
+                    </div>
+                </fieldset>
+
+                <div class="designing">
+                    <label for="about">Tell me about yourself:</label>
+                    <textarea name="about" id="about"
+                              placeholder="Type here"></textarea>
+                </div>
+
+                <div class="designing">
+                    <label for="birthday">When is your birthday?</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+
+                <div class="designing">
+                    <label for="age">How old are you?</label>
+                    <input type="number" name="age" id="age"
+                           placeholder="Age">
+                </div>
+
+                <div class="designing submit-row">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Telmen Munkhchuluun 2026</p>
+    </footer>
+</body>
+</html>
