@@ -13,7 +13,7 @@
     </header>
 
     <main>
-        <form action="formproject.html" method="post">
+        <form id="signup-form" action="formproject.html" method="post">
             <fieldset>
                 <legend>About You Bro</legend>
 
@@ -24,15 +24,15 @@
                 </div>
 
                 <div class="designing">
-                    <label for="Email">Email:</label>
-                    <input id="Email" type="email" name="Email"
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="Email"
                            placeholder="Your email">
                 </div>
 
                 <div class="designing">
-                    <label for="Password">Password:</label>
+                    <label for="password">Password:</label>
                     <input type="password" name="password"
-                           id="Password" placeholder="Your password">
+                           id="password" placeholder="Your password">
                 </div>
             </fieldset>
 
@@ -101,10 +101,55 @@
                 </div>
             </fieldset>
         </form>
+
+        <h2>JavaScript Questions</h2>
+
+        <h3>1. What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript is a programming language used to make websites interactive. It was first called LiveScript, but later its name was changed to JavaScript.</p>
+
+        <h3>2. What are the two ways you can run JavaScript?</h3>
+        <p>You can run JavaScript inside a web browser or using Node.js.</p>
+
+        <h3>3. What is jQuery? Is it still popular today?</h3>
+        <p>jQuery is a JavaScript library that makes coding easier. It is still used today, but it is less popular than before.</p>
+
+        <h3>4. What is the most popular front-end JS library today?</h3>
+        <p>React is one of the most popular front-end JavaScript libraries.</p>
+
+        <h3>5. How does your code prevent the form from being submitted? Why do we need to prevent it?</h3>
+        <p>The code uses event.preventDefault() to stop the normal form submission. This prevents the page from reloading.</p>
+
     </main>
 
     <footer>
         <p>&copy; Telmen Munkhchuluun 2026</p>
     </footer>
+
+    <script>
+        const form = document.getElementById("signup-form");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = {
+                email: email.value,
+                password: password.value
+            };
+
+            if (formData.email === "") {
+                alert("Please enter your email!");
+                return;
+            }
+
+            console.log(formData);
+
+            alert("Your form was submitted successfully!");
+
+            form.reset();
+        });
+    </script>
+
 </body>
 </html>
