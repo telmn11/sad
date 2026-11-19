@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telmen's Form Project</title>
     <link rel="stylesheet" href="formproject.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -102,54 +103,26 @@
             </fieldset>
         </form>
 
-        <h2>JavaScript Questions</h2>
+        <p id="response"></p>
 
-        <h3>1. What is JavaScript? How did it get its name?</h3>
-        <p>JavaScript is a programming language used to make websites interactive. It was first called LiveScript, but later its name was changed to JavaScript.</p>
+       <h2>AJAX Questions</h2>
 
-        <h3>2. What are the two ways you can run JavaScript?</h3>
-        <p>You can run JavaScript inside a web browser or using Node.js.</p>
+<h3>1. What is AJAX?</h3>
+<p>AJAX is a way to get data from a server without refreshing the whole page. It make websites faster and easier to use.</p>
 
-        <h3>3. What is jQuery? Is it still popular today?</h3>
-        <p>jQuery is a JavaScript library that makes coding easier. It is still used today, but it is less popular than before.</p>
+<h3>2. Why do you put your JS code in a separate file?</h3>
+<p>I put my JavaScript in a separate file because it is more organized. It is also easier to find and change my code.</p>
 
-        <h3>4. What is the most popular front-end JS library today?</h3>
-        <p>React is one of the most popular front-end JavaScript libraries.</p>
+<h3>3. How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</h3>
+<p>I press F12 to open DevTools. Then I go to Console to see if I have any errors. I can click the error and see which line has the problem.</p>
 
-        <h3>5. How does your code prevent the form from being submitted? Why do we need to prevent it?</h3>
-        <p>The code uses event.preventDefault() to stop the normal form submission. This prevents the page from reloading.</p>
-
+<h3>4. Do your form and fields have the same IDs that your JavaScript uses? Does the Console show any errors? List your IDs, and fix any errors before you submit.</h3>
+<p>Yes, my IDs match with my JavaScript. My IDs are signup-form, name, email, password, gender, yes, no, music, basketball, soccer, about, birthday, age, and response. My form is working and it shows "You have signed up". I checked the Console and there are no errors.</p>
     </main>
 
     <footer>
         <p>&copy; Telmen Munkhchuluun 2026</p>
     </footer>
-
-    <script>
-        const form = document.getElementById("signup-form");
-        const email = document.getElementById("email");
-        const password = document.getElementById("password");
-
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const formData = {
-                email: email.value,
-                password: password.value
-            };
-
-            if (formData.email === "") {
-                alert("Please enter your email!");
-                return;
-            }
-
-            console.log(formData);
-
-            alert("Your form was submitted successfully!");
-
-            form.reset();
-        });
-    </script>
 
 </body>
 </html>
