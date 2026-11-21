@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,14 +8,15 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
     <header>
-        <h1>Telmen's Form Project Guys</h1>
+        <h1>Telmen's Form Project</h1>
     </header>
 
     <main>
-        <form id="signup-form" action="formproject.html" method="post">
+        <form id="signup-form">
             <fieldset>
-                <legend>About You Bro</legend>
+                <legend>About You</legend>
 
                 <div class="designing">
                     <label for="name">Fullname:</label>
@@ -54,10 +54,12 @@
                     <legend>Do You Believe in Yourself?</legend>
 
                     <div class="choice-row">
-                        <input type="radio" id="yes" name="role" value="Yes">
+                        <input type="radio" id="yes"
+                               name="role" value="Yes">
                         <label for="yes">Yes</label>
 
-                        <input type="radio" id="no" name="role" value="No">
+                        <input type="radio" id="no"
+                               name="role" value="No">
                         <label for="no">No</label>
                     </div>
                 </fieldset>
@@ -104,20 +106,7 @@
         </form>
 
         <p id="response"></p>
-
-       <h2>AJAX Questions</h2>
-
-<h3>1. What is AJAX?</h3>
-<p>AJAX is a way to get data from a server without refreshing the whole page. It make websites faster and easier to use.</p>
-
-<h3>2. Why do you put your JS code in a separate file?</h3>
-<p>I put my JavaScript in a separate file because it is more organized. It is also easier to find and change my code.</p>
-
-<h3>3. How do you use the inspector (DevTools) to debug your JavaScript? How do you find the line number of an error?</h3>
-<p>I press F12 to open DevTools. Then I go to Console to see if I have any errors. I can click the error and see which line has the problem.</p>
-
-<h3>4. Do your form and fields have the same IDs that your JavaScript uses? Does the Console show any errors? List your IDs, and fix any errors before you submit.</h3>
-<p>Yes, my IDs match with my JavaScript. My IDs are signup-form, name, email, password, gender, yes, no, music, basketball, soccer, about, birthday, age, and response. My form is working and it shows "You have signed up". I checked the Console and there are no errors.</p>
+    
     </main>
 
     <footer>
